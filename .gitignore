@@ -1,9 +1,15 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,macos,visualstudiocode,dotenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,macos,visualstudiocode,dotenv
 
+### User defined ###
+NOTES.md
+NOTES 
+blog.db  
+
 ### dotenv ###
 .env
 .venv
+
 
 ### User Uploaded Media Files ###
 media/
