@@ -1,3 +1,5 @@
+import hashlib
+import secrets
 from datetime import UTC, datetime, timedelta
 from typing import Annotated
 
@@ -93,3 +95,11 @@ async def get_current_user(
 
 
 CurrentUser = Annotated[models.User, Depends(get_current_user)]
+
+
+def generate_reset_token() -> str:
+    return secrets.token_urlsafe(32)
+
+
+def hash_reset_token(token: str) -> str:
+    return hashlib.sha256(token.encode()).hexdigest()
