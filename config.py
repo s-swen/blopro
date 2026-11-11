@@ -25,6 +25,7 @@ class Settings(BaseSettings):
     mail_use_tls: bool = True
 
     frontend_url: str = "http://localhost:8000"
+    database_url: str
 
 
 settings = Settings()  # type: ignore[call-arg] # Loaded from .env file

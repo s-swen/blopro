@@ -17,6 +17,9 @@ media/
 ### Database Files ###
 *.sqlite3
 *.db
+# 🐍 Python cache files
+__pycache__/
+*.py[cod]
 
 ### macOS ###
 # General
