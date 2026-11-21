@@ -18,6 +18,6 @@ class Base(DeclarativeBase):
     pass
 
 
-async def get_db():
+async def get_db():  # pragma: no cover
     async with AsyncSessionLocal() as session:
         yield session
